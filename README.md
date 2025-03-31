@@ -59,25 +59,7 @@ sequenceDiagram
     end
 ```
 
-## 🌿 Git Branch Strategy
-```mermaid
-gitGraph
-    commit "Initial Commit"
-    branch dev
-    checkout dev
-    commit "Setup Project Structure"
-    branch feature/classification
-    checkout feature/classification
-    commit "Implement AI Classification"
-    checkout dev
-    merge feature/classification
-    branch release/v1.0
-    checkout release/v1.0
-    commit "Prepare for Release"
-    checkout main
-    merge release/v1.0
-    tag "v1.0"
-```
+
 
 ## 🚀 Getting Started
 
