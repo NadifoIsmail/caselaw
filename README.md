@@ -62,18 +62,21 @@ sequenceDiagram
 ## 🌿 Git Branch Strategy
 ```mermaid
 gitGraph
-    commit id:"Initial Commit"
+    commit "Initial Commit"
     branch dev
-    commit id:"Setup Project Structure"
-    branch feature/classification
-    commit id:"Implement AI Classification"
     checkout dev
-    merge feature/classification id:"Merge Classification Feature"
+    commit "Setup Project Structure"
+    branch feature/classification
+    checkout feature/classification
+    commit "Implement AI Classification"
+    checkout dev
+    merge feature/classification
     branch release/v1.0
-    commit id:"Prepare for Release"
+    checkout release/v1.0
+    commit "Prepare for Release"
     checkout main
-    merge release/v1.0 id:"Release v1.0"
-    tag v1.0
+    merge release/v1.0
+    tag "v1.0"
 ```
 
 ## 🚀 Getting Started
