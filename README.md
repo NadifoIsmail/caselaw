@@ -1,7 +1,5 @@
 # AI-Powered Legal Case Classification System
 
-![Project Banner](https://via.placeholder.com/1200x400/3a86ff/ffffff?text=Legal+Case+Classification+System)
-
 ## 📌 Overview
 An intelligent system that automates legal case classification using Google Gemini AI, featuring:
 - **Flask** backend with MongoDB
@@ -64,23 +62,18 @@ sequenceDiagram
 ## 🌿 Git Branch Strategy
 ```mermaid
 gitGraph
-    commit
+    commit id:"Initial Commit"
     branch dev
-    checkout dev
-    commit
+    commit id:"Setup Project Structure"
     branch feature/classification
-    commit type: HIGHLIGHT
+    commit id:"Implement AI Classification"
     checkout dev
-    merge feature/classification
+    merge feature/classification id:"Merge Classification Feature"
     branch release/v1.0
-    commit
+    commit id:"Prepare for Release"
     checkout main
-    merge release/v1.0
-    commit tag: "v1.0"
-    
-    style feature/classification fill:#b5ead7,stroke:#333
-    style dev fill:#ffdac1,stroke:#333
-    style main fill:#c7ceea,stroke:#333
+    merge release/v1.0 id:"Release v1.0"
+    tag v1.0
 ```
 
 ## 🚀 Getting Started
@@ -131,7 +124,3 @@ npm test
 
 ## 📄 License
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## 📧 Contact
-Project Lead: [Your Name] - your.email@example.com  
-Project Link: [https://github.com/your/repo](https://github.com/your/repo)
